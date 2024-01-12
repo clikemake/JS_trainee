@@ -278,3 +278,63 @@ input{
     box-shadow: 0px 0px 380px purple;
     animation: animationBlinking 8s ease-in-out infinite;
 }
+
+/*===================*/
+
+
+/*Статичные звезды*/
+
+.blink_div{
+    width: 3px;
+    height: 3px;
+    position: absolute;
+    background-color: white;
+}
+
+#blink_1{
+    top: 3vh;
+    left: 5vw;
+    animation: animationBlinking 4s ease-in-out infinite;
+}
+
+#blink_2{
+    top: 30vh;
+    left: 20vw;
+    animation: animationBlinking 6s ease-in-out infinite;
+}
+
+#blink_3{
+    top: 30vh;
+    right: 25vw;
+    animation: animationBlinking 3s ease-in-out infinite;
+}
+
+#blink_4{
+    bottom: 30vh;
+    right: 15vw;
+    animation: animationBlinking 7s ease-in-out infinite;
+}
+
+#blink_5{
+    bottom: 40vh;
+    left: 15vw;
+    animation: animationBlinking 5s ease-in-out infinite;
+}
+
+#blink_6{
+    bottom: 30vh;
+    right: 15vw;
+    animation: animationBlinking 3s ease-in-out infinite;
+}
+
+#blink_7{
+    bottom: 5vh;
+    right: 55vw;
+    animation: animationBlinking 3s ease-in-out infinite;
+}
+
+#blink_8{
+    top: 5vh;
+    right: 55vw;
+    animation: animationBlinking 3s ease-in-out infinite;
+}
