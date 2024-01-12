@@ -1,0 +1,9 @@
+@font-face {
+	font-family: 'Press Start K';
+	src: url('press_start_k.eot'); /* IE 9 Compatibility Mode */
+	src: url('press_start_k.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('press_start_k.woff2') format('woff2'), /* Super Modern Browsers */
+		url('press_start_k.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('press_start_k.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('press_start_k.svg#press_start_k') format('svg'); /* Chrome < 4, Legacy iOS */
+}

@@ -1,0 +1,280 @@
+/*Переменные*/
+:root{
+    --main-background-color: rgb(44, 19, 65);
+    --input-form-color: rgb(16, 16, 16, 0.82);
+    --red-nebula-color : radial-gradient(circle, rgb(200, 91, 91), rgb(89, 0, 0));
+    --blue-nebula-color : radial-gradient(circle, rgb(100, 91, 200), rgb(4, 0, 89));
+    --purple-nebula-color : radial-gradient(circle, rgb(142, 55, 147), rgb(69, 0, 64));
+}
+
+/* Сброс CSS */
+body, h1, h2, h3, p, ul, ol, li, figure, figcaption, blockquote, dl, dd {
+    margin: 0;
+    padding: 0;
+}
+  
+body {
+    font-family: 'PressStart', sans-serif; /* Замените шрифт по вашему выбору */
+    line-height: 1.6;
+    background-color: var(--main-background-color);
+    overflow: hidden;
+}
+  
+ol, ul {
+    list-style: none;
+}
+
+input{
+    border: none;
+    outline: none;
+}
+
+/*Шрифт*/
+@font-face {
+    font-family: 'PressStart';
+    src: url('fonts/press_start_k.woff2') format('woff2');
+}
+
+/*==================*/
+
+/*Анимации*/
+@keyframes animationBackground{
+    from{
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(99vw);
+    }
+}
+
+@keyframes animationBlinking {
+    0%{
+        opacity: 0.1;
+    }
+    
+    50%{
+        opacity: 0.35;
+    }
+
+    100%{
+        opacity: 0.1;
+    }
+}
+
+/*==================*/
+
+.main_div{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Форма ввода данных*/
+.input_form{
+    width: 450px;
+    height: 320px;
+    background-color: var(--input-form-color);
+    position: relative;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*Общие свойства для "выколотых" блоков на форме*/
+.block_form{
+    background-color: var(--main-background-color);
+    position: absolute;
+}
+
+/*"Выколотые" блоки на форме*/
+
+#block_form_1{
+    width: 40px;
+    height: 35px;
+    top: 0px;
+    right: 0px;
+}
+
+#block_form_2{
+    width: 30px;
+    height: 45px;
+    top: 70px;
+    left: 0px;
+}
+
+#block_form_3{
+    width: 90px;
+    height: 35px;
+    bottom: 0px;
+    right: 0px;
+}
+
+#block_form_4{
+    width: 70px;
+    height: 30px;
+    bottom: 25px;
+    left: 0px;
+}
+
+#block_form_5{
+    width: 120px;
+    height: 20px;
+    top: 0px;
+    left: 40px;
+}
+
+/*========================*/
+
+/*Стили input`ов*/
+
+.input_text{
+    width: 300px;
+    height: 20px;
+    margin: 0 0 10px 0;
+    font-family: 'PressStart', sans-serif;
+    text-align: center;
+    z-index: 100;
+}
+
+.p_input_form{
+    margin-top: 10px;
+    color: white;
+    z-index: 100;
+}
+
+/*Анимация background`a*/
+
+.animated_div_back{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+}
+
+#anim_div_1{
+    top:10vh;
+    animation: animationBackground 5s linear infinite;
+}
+
+#anim_div_2{
+    top:20vh;
+    animation: animationBackground 9s linear infinite;
+}
+
+#anim_div_3{
+    top:30vh;
+    animation: animationBackground 15s linear infinite;
+    z-index: 10;
+}
+
+#anim_div_4{
+    top:35vh;
+    animation: animationBackground 7s linear infinite;
+    z-index: 10;
+}
+
+#anim_div_5{
+    top:40vh;
+    animation: animationBackground 13s linear infinite;
+    z-index: 10;
+}
+
+#anim_div_6{
+    top:55vh;
+    animation: animationBackground 17s linear infinite;
+    z-index: 10;
+}
+
+#anim_div_7{
+    top:65vh;
+    animation: animationBackground 4s linear infinite;
+    z-index: 10;
+}
+
+#anim_div_8{
+    top:75vh;
+    animation: animationBackground 2s linear infinite;
+    z-index: 10;
+}
+
+#anim_div_9{
+    top:85vh;
+    animation: animationBackground 8s linear infinite;
+    z-index: 10;
+}
+
+.animated_div_back_little{
+    position: absolute;
+    width: 15px;
+    height: 5px;
+    background-color: white;
+}
+
+#anim_div_little_1{
+    top:5vh;
+    animation: animationBackground 1.5s linear infinite;
+}
+
+#anim_div_little_2{
+    top:50vh;
+    animation: animationBackground 1.8s linear infinite;
+}
+
+#anim_div_little_3{
+    top:70vh;
+    animation: animationBackground 4.5s linear infinite;
+    z-index: 10;
+}
+
+#anim_div_little_4{
+    top:80vh;
+    animation: animationBackground 3.2s linear infinite;
+}
+
+#anim_div_little_5{
+    top:35vh;
+    animation: animationBackground 2.7s linear infinite;
+}
+
+/*=================*/
+
+/*Туманности на фоне*/
+
+.nebula_div{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    opacity: 0.25;
+    border-radius: 180px;
+    z-index: 2;
+}
+
+#nebula_red{
+    background: var(--red-nebula-color);
+    bottom: -5vh;
+    right: -5vw;
+    border-radius: 180px;
+    box-shadow: 0px 0px 380px red;
+    animation: animationBlinking 12s ease-in-out infinite;
+}
+
+#nebula_blue{
+    background: var(--blue-nebula-color);
+    top: 1vh;
+    left: 5vw;
+    border-radius: 180px;
+    box-shadow: 0px 0px 380px blue;
+    animation: animationBlinking 10s ease-in-out infinite;
+}
+
+#nebula_purple{
+    background: var(--purple-nebula-color);
+    top: 45vh;
+    left: -5vw;
+    border-radius: 180px;
+    box-shadow: 0px 0px 380px purple;
+    animation: animationBlinking 8s ease-in-out infinite;
+}
