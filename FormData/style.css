@@ -338,3 +338,17 @@ input{
     right: 55vw;
     animation: animationBlinking 3s ease-in-out infinite;
 }
+
+/*=================*/
+
+/*Кнопка Continue*/
+
+.continue_btn{
+    width: 150px;
+    height: 40px;
+    font-family: 'PressStart', sans-serif;
+    margin-top: 15px;
+    border: none;
+    background-color: rgb(87, 0, 107);
+    color:white
+}
